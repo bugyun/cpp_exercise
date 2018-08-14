@@ -14,7 +14,7 @@ struct People {
     int age;
     int sex;
 
-    void testPeople() {
+    void testPeople() {//c++中可以定义函数，但是c语言中，struct没有函数
         cout << "name people" << endl;
     }
 };
@@ -33,7 +33,7 @@ public:
     void printTest();//必须先要声明，才可以在类外面实现这个方法。
 
 private://在private下面定义的成员变量和方法只能在类的内部访问
-    char age;
+    int age;
 };
 
 void AdvHero::printTest() {

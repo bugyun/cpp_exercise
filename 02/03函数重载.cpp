@@ -20,6 +20,8 @@ char func(int a); //与第⼀一个函数有冲突
  *  重载底层实现(name mangling)
     C++利用 name mangling(倾轧)技术,来改名函数名,区分参数不同的同 名函数。
     实现原理:用 v c i f l d 表示 void char int float long double 及其引 用。
+
+    https://zh.wikipedia.org/wiki/%E5%90%8D%E5%AD%97%E4%BF%AE%E9%A5%B0
  */
 
 void func(char a);                  // func_c(char a)

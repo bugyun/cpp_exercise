@@ -20,6 +20,7 @@ float volume(float length, float weight = 4, float high = 5) {
   函数占位参数
   占位参数只有参数类型声明，⽽没有参数名声明
   一般情况下，在函数体内部⽆法使用占位参数
+  java中没有这种实现，因为“默认参数”和“方法重载”同时支持的话有二义性的问题
 */
 int func(int a, int b, int = 0) {
     return a + b;
