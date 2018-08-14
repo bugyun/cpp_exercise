@@ -34,6 +34,9 @@ public:
 
 private://在private下面定义的成员变量和方法只能在类的内部访问
     int age;
+
+protected://保护控制权限。在类的继承中跟private有区别，在单个类中，跟private是一模一样
+    char alias[64];
 };
 
 void AdvHero::printTest() {
