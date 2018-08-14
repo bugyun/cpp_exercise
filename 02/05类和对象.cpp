@@ -44,7 +44,7 @@ void AdvHero::printTest() {
 }
 
 int main() {
-    People people;
+    People people;//会在内存中的初始化对象,属性会被初始化。
     people.testPeople();
 
     AdvHero advHero;
