@@ -44,6 +44,9 @@ void testCPP() {
         cout << array_p[i];
     }
     cout << endl;
+    if (array_p != NULL) {
+        delete[]array_p;
+    }
 }
 
 int main() {
