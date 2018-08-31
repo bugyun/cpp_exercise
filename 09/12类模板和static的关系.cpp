@@ -15,6 +15,8 @@ template<class T> int Person<T>::a = 0;
 
 int main() {
 
+
+    //调用的不是类模板，而是生成的具体的类
     Person<int> p1, p2, p3;
     cout << "p1 = " << p1.a << endl;
 
