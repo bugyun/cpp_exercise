@@ -6,11 +6,7 @@
  * map相对于set区别，map有键值对，所有的元素根据键值自动排序。map是以红黑树为底层实现机制。
  * multimap，允许重复键
  *
- *
- *
- *
- *
- *
+ * count(key);返回容器中为key的对组个数
  */
 
 #include <iostream>
@@ -46,9 +42,16 @@ void test01() {
     cout << "m[60]" << m[60] << endl;//如果通过[]方式去访问map中一个不存在的key,那么map会将整个访问的key插入到map中
 
     printMap(m);
-
-
 }
+
+//排序
+struct mycompare {
+    bool operator()(int v1, int v2) {
+        return v1 > v2;
+    }
+};
+
+
 
 
 int main() {
